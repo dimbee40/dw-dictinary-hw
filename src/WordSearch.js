@@ -8,13 +8,9 @@ export default function WordSearch() {
 
   function handleResponse(response) {
     console.log(response);
-    setWord(<p>{word}</p>);
-    setPronounciation(<p>pronunciation: {pronounciation}</p>);
-    setDefinition(
-      <p>
-        {word} means {definition}{" "}
-      </p>
-    );
+    // setWord(<p>{word}</p>);
+    setPronounciation(<p>pronunciation:</p>);
+    setDefinition(<p>definition:{response.data[0].meanings.definitions}</p>);
   }
 
   function handleSubmit(event) {
@@ -35,11 +31,10 @@ export default function WordSearch() {
         <input type="submit" value="Search for word" />
       </form>
 
-      <div>
-        <p>{word}</p>
+      <div className="searchResults">
         <div className="definition">
           <h2> definition </h2>
-          <p>{definition}</p>A definition is the meaning of a word
+          <p>{definition}</p>
         </div>
         <div className="pronounciation">
           <h2> pronounciation </h2>
