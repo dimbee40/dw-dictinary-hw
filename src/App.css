@@ -1,0 +1,29 @@
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #1b294c,
+    #2f3962,
+    #454b79,
+    #5b5d90
+  );
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  object-position: center;
+}
+
+p {
+  text-align: left;
+  color: white;
+}
+
+.link {
+  color: aqua;
+}
