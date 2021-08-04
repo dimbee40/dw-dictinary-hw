@@ -6,6 +6,9 @@ export default function App() {
     <div className="App">
       <h1>Dictionary Search</h1>
       <WeatherSearch />
+      <a href="blank" className="btn-btn-secondary">
+        Hello
+      </a>
     </div>
   );
 }
