@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import axios from "axios";
+import axios from "axios";
 
 export default function WordSearch() {
   const [word, setWord] = useState("");
@@ -8,18 +8,19 @@ export default function WordSearch() {
 
   function handleResponse(response) {
     console.log(response);
-    setWord(<li>{word}</li>);
-    setPronounciation(<li>pronunciation: {pronounciation}</li>);
+    setWord(<p>{word}</p>);
+    setPronounciation(<p>pronunciation: {pronounciation}</p>);
     setDefinition(
-      <li>
+      <p>
         {word} means {definition}{" "}
-      </li>
+      </p>
     );
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    handleResponse();
+    let url = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+    axios.get(url).then(handleResponse);
   }
 
   function changeWord(event) {
@@ -33,17 +34,24 @@ export default function WordSearch() {
         <input type="search" placeholder="enter a word" onChange={changeWord} />
         <input type="submit" value="Search for word" />
       </form>
-      <p>{word}</p>
-      <p>{pronounciation}</p>
-      <p>{definition}</p>
 
-      <div className="definition">
-        <h2> meaning </h2>
-        <p>A definition is the meaning of a word </p>
+      <div>
+        <p>{word}</p>
+        <div className="definition">
+          <h2> definition </h2>
+          <p>{definition}</p>A definition is the meaning of a word
+        </div>
+        <div className="pronounciation">
+          <h2> pronounciation </h2>
+          <p>{pronounciation}</p>
+        </div>
       </div>
 
       <p>
-        Coded by <a href="https://github.com/dimbee40/dw-dictinary-hw">Deb</a>
+        Coded by{" "}
+        <a href="https://github.com/dimbee40/dw-dictinary-hw" className="link">
+          Deb{" "}
+        </a>
       </p>
     </div>
   );

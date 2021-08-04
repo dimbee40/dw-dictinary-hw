@@ -1,23 +1,25 @@
 .App {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #1b294c,
-    #2f3962,
-    #454b79,
-    #5b5d90
+  font-family: "Courier New", Courier, monospace;
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
   );
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: rgb(255, 136, 0);
 }
 
 h2 {
-  color: navajowhite;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: rgb(255, 136, 0);
+  font-family: "Courier New", Courier, monospace;
 }
 
 form {
@@ -27,10 +29,11 @@ form {
 p {
   text-align: left;
   color: white;
+  list-style: none;
 }
 
 .link {
-  color: plum;
+  color: white;
 }
 
 .btn-btn-secondary {
