@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function WeatherSearch() {
-  const [city, setCity] = useState("");
+export default function WordSearch() {
+  const [word, setWord] = useState("");
   const [temperature, setTemperature] = useState("");
   const [wind, setWind] = useState("");
   const [icon, setIcon] = useState("");
@@ -13,7 +13,7 @@ export default function WeatherSearch() {
     console.log(response);
     setTemperature(
       <li>
-        Current temperature in {city} is {Math.round(response.data.main.temp)}{" "}
+        Current temperature in {word} is {Math.round(response.data.main.temp)}{" "}
         °C
       </li>
     );
@@ -35,19 +35,19 @@ export default function WeatherSearch() {
   function handleSubmit(event) {
     event.preventDefault();
     let api = "3ec119a7b4622feedeeba843b106eb0a";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${word}&appid=${api}&units=metric`;
     axios.get(url).then(handleResponse);
   }
 
-  function changeCity(event) {
-    setCity(event.target.value);
-    console.log(city);
+  function changeWord(event) {
+    setWord(event.target.value);
+    console.log(word);
   }
 
   return (
-    <div className="WeatherSearch">
+    <div className="WordSearch">
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="enter a word" onChange={changeCity} />
+        <input type="search" placeholder="enter a word" onChange={changeWord} />
         <input type="submit" value="Search for word" />
       </form>
       <p>{temperature}</p>
