@@ -47,7 +47,7 @@ export default function WeatherSearch() {
   return (
     <div className="WeatherSearch">
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Type a word" onChange={changeCity} />
+        <input type="search" placeholder="enter a word" onChange={changeCity} />
         <input type="submit" value="Search for word" />
       </form>
       <p>{temperature}</p>
@@ -55,8 +55,13 @@ export default function WeatherSearch() {
       <p>{humidity}</p>
       <p>{description}</p>
       <p>{icon}</p>
+      <div className="definition">
+        <h2> meaning </h2>
+        <p>A definition is the meaning of a word </p>
+      </div>
+
       <p>
-        Coded by <a href="https://github.com/dimbee40/test-repo">Deb</a>
+        Coded by <a href="https://github.com/dimbee40/dw-dictinary-hw">Deb</a>
       </p>
     </div>
   );
