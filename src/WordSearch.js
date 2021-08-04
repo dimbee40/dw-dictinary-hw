@@ -13,8 +13,7 @@ export default function WordSearch() {
     console.log(response);
     setTemperature(
       <li>
-        Current temperature in {word} is {Math.round(response.data.main.temp)}{" "}
-        °C
+        {word} is {Math.round(response.data.main.temp)} °C
       </li>
     );
     setDescription(
