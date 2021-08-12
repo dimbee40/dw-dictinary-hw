@@ -4,7 +4,7 @@ import WordSearch from "./WordSearch";
 export default function App() {
   return (
     <div className="App">
-      <h1>Dictionary Search</h1>
+      <h1>DICTIONARY SEARCH</h1>
       <WordSearch />
     </div>
   );

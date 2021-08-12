@@ -17,19 +17,27 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   color: rgb(255, 136, 0);
   font-family: "Courier New", Courier, monospace;
+  margin-left: 1cm;
+}
+
+h3 {
+  color: whitesmoke;
+  margin-left: 1cm;
 }
 
 form {
   object-position: center;
+  margin-left: 1cm;
 }
 
 p {
   text-align: left;
   color: white;
   list-style: none;
+  margin-left: 1cm;
 }
 
 .link {
@@ -38,4 +46,20 @@ p {
 
 .btn-btn-secondary {
   color: gray;
+}
+
+.Phonetics {
+  margin-left: 1cm;
+  color: whitesmoke;
+}
+
+.searchWord {
+  text-emphasis: bold;
+}
+
+.searchButton {
+  background: rgb(255, 124, 0);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 20cm;
 }

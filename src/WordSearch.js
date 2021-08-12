@@ -23,7 +23,7 @@ export default function WordSearch() {
     <div className="WordSearch">
       <form onSubmit={handleSubmit}>
         <input type="search" placeholder="enter a word" onChange={changeWord} />
-        <input type="submit" value="Search for word" />
+        <input className="searchButton" type="submit" value="Search for word" />
       </form>
       <Results results={results} />
       <p>
