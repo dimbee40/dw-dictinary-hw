@@ -20,18 +20,25 @@ export default function WordSearch() {
   }
 
   return (
-    <div className="WordSearch">
-      <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="enter a word" onChange={changeWord} />
-        <input className="searchButton" type="submit" value="Search for word" />
-      </form>
-      <Results results={results} />
-      <p>
-        Coded by{" "}
-        <a href="https://github.com/dimbee40/dw-dictinary-hw" className="link">
-          Deb{" "}
-        </a>
-      </p>
+    <div>
+      <section className="WordSearch">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="enter a word e.g. garden, hello, window"
+            onChange={changeWord}
+            className="searchField"
+          />
+          <input
+            className="searchButton"
+            type="submit"
+            value="Search definition"
+          />
+        </form>
+      </section>
+      <section>
+        <Results results={results} />
+      </section>
     </div>
   );
 }

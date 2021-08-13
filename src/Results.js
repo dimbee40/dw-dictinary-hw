@@ -8,7 +8,7 @@ export default function Results(props) {
 
   if (props.results) {
     return (
-      <div className="searchResults">
+      <section>
         {" "}
         <h2 className="searchWord">{props.results.word}</h2>
         {props.results.phonetics.map(function (phonetic, index) {
@@ -21,13 +21,13 @@ export default function Results(props) {
         })}
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <div className="searchResults" key={index}>
               {" "}
               <Meaning meaning={meaning} />{" "}
             </div>
           );
         })}{" "}
-      </div>
+      </section>
     );
   } else {
     return null;

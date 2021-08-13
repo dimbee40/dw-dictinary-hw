@@ -9,11 +9,24 @@
     rgb(19, 30, 37) 24.5%,
     rgb(19, 30, 37) 66%
   );
+  object-position: center;
+  margin-left: 5cm;
+  margin-right: 5cm;
+}
+
+.WordSearch {
+  padding-bottom: 10px;
+}
+
+.searchField {
+  width: 80%;
+  border-radius: 5px;
 }
 
 h1 {
   text-align: center;
   color: rgb(255, 136, 0);
+  padding: 50px;
 }
 
 h2 {
@@ -24,32 +37,28 @@ h2 {
 }
 
 h3 {
-  color: whitesmoke;
-  margin-left: 1cm;
+  color: rgb(19, 30, 37);
 }
 
 form {
   object-position: center;
   margin-left: 1cm;
+  margin-right: 1cm;
 }
 
 p {
   text-align: left;
-  color: white;
+  color: rgb(19, 30, 37);
   list-style: none;
-  margin-left: 1cm;
 }
 
 .link {
-  color: white;
-}
-
-.btn-btn-secondary {
-  color: gray;
+  color: rgb(255, 124, 0);
 }
 
 .Phonetics {
   margin-left: 1cm;
+  margin-right: 1cm;
   color: whitesmoke;
 }
 
@@ -60,6 +69,29 @@ p {
 .searchButton {
   background: rgb(255, 124, 0);
   color: white;
+  font-size: 15px;
   font-family: "Courier New", Courier, monospace;
-  border-radius: 20cm;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.searchWord {
+  background: whitesmoke;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  border-radius: 5px;
+}
+
+.searchResults {
+  background: whitesmoke;
+  margin-right: 1cm;
+  margin-left: 1cm;
+  border-radius: 5px;
+}
+
+.footer {
+  color: whitesmoke;
+  margin-left: 1cm;
+  padding: 10px;
+  font-size: 20px;
 }
