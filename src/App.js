@@ -6,7 +6,7 @@ export default function App() {
     <div>
       {" "}
       <div className="App">
-        <h1>DICTIONARY SEARCH</h1>
+        <h1>ONLINE DICTIONARY</h1>
         <WordSearch />
         <p className="footer">
           Coded by{" "}

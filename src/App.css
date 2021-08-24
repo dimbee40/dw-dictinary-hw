@@ -59,7 +59,9 @@ p {
 .Phonetics {
   margin-left: 1cm;
   margin-right: 1cm;
-  color: whitesmoke;
+  color: rgb(255, 124, 0);
+  background: whitesmoke;
+  border-radius: 5px;
 }
 
 .searchWord {
@@ -94,4 +96,10 @@ p {
   margin-left: 1cm;
   padding: 10px;
   font-size: 20px;
+}
+
+.Photos {
+  margin-left: 5cm;
+  display: block;
+  align-content: center;
 }
